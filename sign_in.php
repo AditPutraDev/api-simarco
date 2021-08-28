@@ -10,6 +10,7 @@
     if (isset($result)) {
         $response['value'] = 1;
         $response['message'] = "Successfully sign in";
+        $response['user_id'] = $result['user_id'];
         $response['username'] = $result['username'];
         $response['nama'] = $result['full_name'];
         $response['password'] = $result['password'];
