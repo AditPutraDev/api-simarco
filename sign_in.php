@@ -16,6 +16,8 @@
         $response['role'] = $result['role'];
         $response['email'] = $result['email'];
         $response['phone'] = $result['phone'];
+        $response['jabatan'] = $result['jabatan'];
+
 
         echo json_encode($response);
     } else {
