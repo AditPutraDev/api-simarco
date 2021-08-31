@@ -12,7 +12,7 @@
         $dateIn = $_POST['tgl_masuk'];
         $dateOut = $_POST['tgl_keluar'];
 
-        $insert = "INSERT INTO tbl_stok VALUE(NULL,'$idCbg','$kodeCbg','$idBrg','$namaBrg','$jumlah','$stokIn','$stokOut','$dateIn','$dateOut')";
+        $insert = "INSERT INTO tbl_stok VALUE(NULL,'$idCbg','$kodeCbg','$idBrg','$namaBrg','$jumlah','$stokIn','$stokOut','$dateIn','$dateOut',NOW())";
     if (mysqli_query($connect, $insert)) {
         $response['value'] = 1;
         $response['message'] = "Berhasil";
